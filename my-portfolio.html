@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>My Profile</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="container">
+        <div class="logo">
+          <img src="logo.png" alt="Logo">
+        </div>
+        <ul class="nav-links">
+          <li><a href="#my-profile">My Profile</a></li>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#contact-me">Contact</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn"><i class="fas fa-bars"></i></a>
+            <div class="dropdown-content">
+              <a href="#settings">Settings</a>
+              <a href="javascript:void(0)" id="theme-switcher">Switch Theme</a>
+              <a href="#other">Other</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="my-profile" class="profile-section">
+      <div class="container">
+        <h1>Hello, my name is Kidus Yosef</h1>
+        <p>I'm a Web Developer & Designer</p>
+        <img class="profile-img" src="profile.jpg" alt="Profile Picture">
+        <div class="profile-details">
+          <button class="toggle-button" data-target="#personal-details">Personal Details <i class="fas fa-chevron-down"></i></button>
+          <div id="personal-details" class="details-content">
+            <p><strong>Name:</strong> Kidus Yosef</p>
+            <p><strong>Location:</strong> Addis Ababa, Ethiopia</p>
+            <a href="mailto: kidayos2014@gmail.com"><strong>Email:</strong> kidayos2014@gmail.com</a>
+            <p><strong>Phone:</strong> +251-933-187-593</p>
+          </div>
+          <button class="toggle-button" data-target="#skills">Skills <i class="fas fa-chevron-down"></i></button>
+          <div id="skills" class="details-content">
+            <ul>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Node.js</li>
+              <li>MongoDB</li>
+              <li>HTML & CSS</li>
+            </ul>
+          </div>
+          <button class="toggle-button" data-target="#hobbies">Hobbies <i class="fas fa-chevron-down"></i></button>
+          <div id="hobbies" class="details-content">
+            <p>Exploring the outdoors, Reading books, Learning new technologies</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about-me" class="about-me-section">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>Hello! I'm Kidus Yosef, a passionate developer with a keen interest in web development and design. I love creating beautiful and functional web applications that make a difference. In my spare time, I enjoy learning new technologies, exploring the outdoors, and reading books.</p>
+        <p>Feel free to connect with me on social media or drop me a message!</p>
+        <div class="social-links">
+          <a href="https://twitter.com/kidayos123" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://linkedin.com/in/kidus-yosef-b6b4a7265" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/kidaholy" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Kidus Yosef. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
